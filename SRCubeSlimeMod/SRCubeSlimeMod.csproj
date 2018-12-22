@@ -56,6 +56,35 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <None Update="Assets\SRCubeSlimeMod\cube_slime.obj">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Assets\SRCubeSlimeMod\icon_boom_slime.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Assets\SRCubeSlimeMod\icon_crystal_slime.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Assets\SRCubeSlimeMod\icon_honey_slime.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Assets\SRCubeSlimeMod\icon_phosphor_slime.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Assets\SRCubeSlimeMod\icon_pink_slime.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Assets\SRCubeSlimeMod\icon_rad_slime.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Assets\SRCubeSlimeMod\icon_rock_slime.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Assets\SRCubeSlimeMod\icon_tabby_slime.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
 	<Exec Command="&quot;$(SlimeRancherPath)uModFramework\uModFramework.Setup.exe&quot; -packmod SRCubeSlimeMod $(TargetDir)" />
   </Target>
