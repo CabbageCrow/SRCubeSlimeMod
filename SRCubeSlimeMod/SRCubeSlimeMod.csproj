@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9A966492-62D3-4928-92D3-965C307D55C9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SRCubeSlimeMod</RootNamespace>
+    <AssemblyName>SRCubeSlimeMod</AssemblyName>
+	<TargetFrameworks>net35</TargetFrameworks>
+    <FileAlignment>512</FileAlignment>
+	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+	<Configurations>Release</Configurations>
+	<SlimeRancherPath>E:\Games\Steam\steamapps\common\Slime Rancher\</SlimeRancherPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>$(SlimeRancherPath)uModFramework\Lib\net35\0Harmony.dll</HintPath>
+      <Private>False</Private>
+	  <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(SlimeRancherPath)SlimeRancher_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+	  <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="uModFramework">
+      <HintPath>$(SlimeRancherPath)SlimeRancher_Data\Managed\uModFramework.dll</HintPath>
+      <Private>False</Private>
+	  <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(SlimeRancherPath)SlimeRancher_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+	  <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(SlimeRancherPath)SlimeRancher_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+	  <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModInfo.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+	<Exec Command="&quot;$(SlimeRancherPath)uModFramework\uModFramework.Setup.exe&quot; -packmod SRCubeSlimeMod $(TargetDir)" />
+  </Target>
+</Project>

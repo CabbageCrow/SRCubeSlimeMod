@@ -1,0 +1,2 @@
+﻿Use this file to provide info, changelogs and news.
+The text is shown everytime someone installs the mod, or it is automatically updated using UpdateURL.
