@@ -1,2 +1,7 @@
-﻿Use this file to provide info, changelogs and news.
-The text is shown everytime someone installs the mod, or it is automatically updated using UpdateURL.
+﻿Changes models of all of the slimes to the cube slime model. Gordos are unchanged.
+
+Credits:
+Slime Icons - HKdragonboy#6616
+
+Version 1.0
+-First release
