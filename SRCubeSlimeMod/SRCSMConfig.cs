@@ -25,9 +25,10 @@ namespace SRCubeSlimeMod
 
                     cfg.Write("SupportsHotLoading", new UMFConfigBool(false));//Due to where the mod overwrites Slime meshes/icons it does not support hot loading.
                     cfg.Read("LoadPriority", new UMFConfigString("Normal"));
-                    cfg.Write("MinVersion", new UMFConfigString("0.50"));
+                    cfg.Write("MinVersion", new UMFConfigString("0.50.22"));
                     //cfg.Write("MaxVersion", new UMFConfigString("0.54.99999.99999"));
-                    cfg.Write("UpdateURL", new UMFConfigString(@"https://raw.githubusercontent.com/EmeraldPlay27/SRCubeSlimeMod/master/version.txt"));
+                    //cfg.Write("UpdateURL", new UMFConfigString(@"https://raw.githubusercontent.com/EmeraldPlay27/SRCubeSlimeMod/master/version.txt"));
+                    //cfg.Write("UpdateURL", new UMFConfigString(@"https://umodframework.com/new/updatemod?id="));
                     cfg.Write("ConfigVersion", new UMFConfigString(configVersion));
 
                     SRCubeSlimeMod.Log("Finished UMF Settings.");

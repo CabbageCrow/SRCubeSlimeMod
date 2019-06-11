@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Slime Rancher Cube Slime Mod")]
 [assembly: AssemblyDescription("A UMF Mod(umodframework.com) for Slime Rancher")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("EmeraldPlay @ Slime Rancher Wiki Discord")]
+[assembly: AssemblyCompany("EmeraldPlay and UMFDev")]
 [assembly: AssemblyProduct("Slime Rancher Cube Slime Mod")]
-[assembly: AssemblyCopyright("© 2018 EmeraldPlay.")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
-using Harmony;
+using HarmonyLib;
 using UModFramework.API;
 
 namespace SRCubeSlimeMod.Patches

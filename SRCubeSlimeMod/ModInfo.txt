@@ -1,11 +1,13 @@
 ﻿Changes models of all of the slimes to the cube slime model. Gordos are unchanged.
 
 
-Credits:
-Project Leader - EmeraldPlay27
-Slime Icons - HKdragonboy#6616
-Coding - UMFDev
-
-
 Version 1.0
--First release
+ - First release
+
+
+Credits:
+ Original Creator - EmeraldPlay27
+ Slime Icons - HKdragonboy#6616
+ Porting to UMF Mod - UMFDev
+ Coding - UMFDev
+ Maintaining - CabbageCrow

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using MonomiPark.SlimeRancher;
-using Harmony;
+using HarmonyLib;
 
 namespace SRCubeSlimeMod.Patches
 {
