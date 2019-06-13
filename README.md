@@ -1,7 +1,7 @@
 # Slime Rancher Cube Slime Mod (UMF Mod)
 
 **This is only the source for the mod.**  
-For help and information, please visit the [Slime Rancher Wiki Discord](https://discord.gg/U3xHVkc).
+For help and information, please visit the [Slime Rancher Discord](https://discord.gg/slimerancher).
 
 #### Build Steps for Windows:
 1. Install [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) or higher.
